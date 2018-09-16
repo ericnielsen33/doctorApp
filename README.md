@@ -4,4 +4,4 @@ You need MongoDB to run this app in dev mode. You can download it at https://www
 
 I'd also recomend getting MongoDB compass, which is a great GUI for looking at the database. 
 
-Next cd into the directory run npm install then npm run dev.
+Next cd into the directory run npm install then npm run dev. Add a file in the root directory called .env and include string constants for JWT_KEY, MONGO_URI, and DEV_SERVER_URI.
