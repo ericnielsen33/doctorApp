@@ -1,4 +1,3 @@
-// name, Patients array of objects
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
@@ -9,7 +8,7 @@ const teamSchema = new Schema({
     },
     teamOwner: {
         type: Schema.Types.ObjectId,
-        ref: 'user',
+        ref: 'User',
         required: true
     },
     patients: [{

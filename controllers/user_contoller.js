@@ -22,6 +22,13 @@ module.exports = {
   },
   async getCurrentUser(req, res) {
     const user = await User.findById(req.user._id);
+    console.log(req.user);
     res.send(_.pick(user, ["_id", "firstName", "lastName", "email"]));
+  },
+  async updateUserProperties(req, res) {
+    const { id } = req.params;
+    const updates = _.pick(req.body, ["firstName", "lastName", "team", "job"]);
+    let user = await User.findByIdAndUpdate(id, updates, { new: true });
+    res.send(user);
   }
 };

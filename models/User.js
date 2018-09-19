@@ -33,6 +33,16 @@ const userSchema = new Schema({
   isAdmin: {
     type: Boolean,
     default: false
+  },
+  team: {
+    type: Schema.Types.ObjectId,
+    ref: "team",
+    required: false
+  },
+  job: {
+    type: Schema.Types.ObjectId,
+    ref: "job",
+    required: false
   }
 });
 

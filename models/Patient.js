@@ -19,6 +19,10 @@ const patientSchema = new Schema({
     room: {
         type: String
     },
+    createdBy: {
+        type: Schema.Types.ObjectId,
+        ref: 'User'
+    },
     primaryTeam: {
         type: Schema.Types.ObjectId,
         ref: 'Team'

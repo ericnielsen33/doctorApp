@@ -6,5 +6,4 @@ module.exports = function() {
   mongoose
     .connect( process.env.MONGO_URI, options )
     .then(() => console.log(`Connected to mongoDB`));
-
 };

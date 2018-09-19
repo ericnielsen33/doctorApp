@@ -3,7 +3,7 @@ const cors = require("cors");
 const users = require("./users");
 const auth = require("./auth");
 const teams = require("./teams");
-// const patients = require("./patients");
+const patients = require("./patients");
 // const rooms = require("./rooms");
 
 const corsOptions = {
@@ -18,7 +18,7 @@ module.exports = function (app) {
     app.use("/api/auth", auth);
     app.use("/api/users", users);
     app.use("/api/teams", teams);
-    // app.use("/api/patients", patients);
+    app.use("/api/patients", patients);
     // app.use("/api/rooms", rooms);
     // add error handler & logger
 }
