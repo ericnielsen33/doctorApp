@@ -6,7 +6,7 @@ You need MongoDB to run this app in dev mode. You can download it at https://www
 
 Add a file in the root directory called .env and include string constants for JWT_KEY, MONGO_URI, and DEV_SERVER_URI. I use:
 
-DEV_SERVER_URI = "http://localhost:5000"
+DEV_SERVER_URI = "http://localhost:5000" </br>
 MONGO_URI = "mongodb://localhost/[DBNAME]" -- note replace [DBNAME] with something like doctorApp.
 JWT_KEY = "[any long string without special characters]"
 
